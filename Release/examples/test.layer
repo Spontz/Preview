@@ -1,0 +1,39 @@
+{
+	name Layer 1
+	blend 1 0
+	color 191 191 191 255
+	effect 0
+	rendermode 6
+	width 1.000000
+	cull 0
+}
+{
+	name Layer 2
+	blend 1 0
+	color 191 191 191 255
+	effect 0
+	rendermode 10
+	width 1.000000
+	cull 0
+}
+{
+	name Layer 3
+	blend 2 1
+	color 191 191 191 255
+	effect 0
+	rendermode 11
+	width 1.000000
+	cull 0
+	texture water.jpg
+}
+{
+	name Layer 4
+	blend 4 5
+	color 191 191 191 128
+	effect 1
+	filtermode 5
+	radius 1.000000
+	accum 0
+	accum2 8
+	recursive 1
+}

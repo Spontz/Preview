@@ -1,0 +1,30 @@
+
+0.1.12dev
+-------------------------------------------------------------------------------
+* updated opengl extensions headers
+* fixed environment mapping working after enable/disable smooth (macosx)
+* fixed blank alpha channel loading environment textures (macosx)
+* fixed blendequation related crash (linux)
+* slightly improved method for getCurrentItem on layer list
+* fixed painting of non calculated face normal
+* fixed an issue with the color selection sliders
+* removed references to glCopyTexSubImage2D (changed by copyColorBuffer)
+* fixed some small issues in effects
+* removed sizes of the general layout spacers
+* disable cull face before rendering effects
+* set cross mouse cursor in viewport
+* added hasNonTriangles flag to meshes
+* bump mapping will not render without texture
+
++ added opengl information dialog
++ added view information dialog
++ added display origins toggle
++ added rotation over object origin toggle
++ added color filter
++ added accumulate filter
++ added benchmark feature
++ improved render performance when triangles in some cases
+
+0.1.11 - August 2005
+-------------------------------------------------------------------------------
+First official public release.

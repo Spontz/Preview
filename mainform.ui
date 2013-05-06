@@ -1,0 +1,1356 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>MainForm</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>MainForm</cstring>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Spöntz Layers Editor - 0.1.12dev</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame" row="0" column="3">
+            <property name="name">
+                <cstring>layerFrame</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QListBox" row="0" column="0" rowspan="3" colspan="1">
+                    <item>
+                        <property name="text">
+                            <string>Layer 1</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>layerList</cstring>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="1">
+                    <property name="name">
+                        <cstring>layout77</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="spacing">
+                            <number>0</number>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>addLayerButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Add</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>removeLayerButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Remove</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer row="1" column="1">
+                    <property name="name">
+                        <cstring>spacer3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>21</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget" row="2" column="1">
+                    <property name="name">
+                        <cstring>layout78</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="spacing">
+                            <number>0</number>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>upLayerButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Up</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>downLayerButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Down</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="1" column="3">
+            <property name="name">
+                <cstring>currentGroup</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="title">
+                <string>Layer properties</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="0" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>layerName</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="2" rowspan="1" colspan="2">
+                    <item>
+                        <property name="text">
+                            <string>Zero</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>One</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Dst Color</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Dst Color</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Src Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Src Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Dst Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Dst Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Src Color</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Src Color</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>srcBlend</cstring>
+                    </property>
+                    <property name="currentItem">
+                        <number>1</number>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="1" column="2" rowspan="1" colspan="2">
+                    <item>
+                        <property name="text">
+                            <string>Zero</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>One</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Dst Color</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Dst Color</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Src Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Src Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Dst Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Dst Alpha</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Src Color</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>1 - Src Color</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>dstBlend</cstring>
+                    </property>
+                </widget>
+                <widget class="QTabWidget" row="4" column="0" rowspan="1" colspan="4">
+                    <property name="name">
+                        <cstring>effectWidget</cstring>
+                    </property>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>tab</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Render</string>
+                        </attribute>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QComboBox" row="0" column="0" rowspan="1" colspan="2">
+                                <item>
+                                    <property name="text">
+                                        <string>Vertexes</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Wireframe</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Bounding boxes</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Bounding spheres</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Color</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Flat</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Shaded</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Face normals</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Vertex normals</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>All vertex normals</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Texture</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Environment</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Bump</string>
+                                    </property>
+                                </item>
+                                <property name="name">
+                                    <cstring>renderMode</cstring>
+                                </property>
+                                <property name="sizeLimit">
+                                    <number>20</number>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="2" column="0">
+                                <property name="name">
+                                    <cstring>smooth</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Smooth</string>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>layoutWidth</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>widthLabel</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Width</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QSlider">
+                                        <property name="name">
+                                            <cstring>width</cstring>
+                                        </property>
+                                        <property name="minValue">
+                                            <number>10</number>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>100</number>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>texturePixmap</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>0</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>70</width>
+                                        <height>70</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>70</width>
+                                        <height>70</height>
+                                    </size>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>Box</enum>
+                                </property>
+                                <property name="scaledContents">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget" row="2" column="1">
+                                <property name="name">
+                                    <cstring>layoutCull</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>cullLabel</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>NoFrame</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string>Cull</string>
+                                        </property>
+                                        <property name="scaledContents">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter|AlignRight</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <item>
+                                            <property name="text">
+                                                <string></string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Back</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Front</string>
+                                            </property>
+                                        </item>
+                                        <property name="name">
+                                            <cstring>cull</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QPushButton" row="3" column="1">
+                                <property name="name">
+                                    <cstring>textureButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Texture</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>tab</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Filter</string>
+                        </attribute>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QComboBox">
+                                <item>
+                                    <property name="text">
+                                        <string>Black and white</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Invert</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Color</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Accumulate</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>High pass filter</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Box blur</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Glow</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Radial blur</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Radial glow</string>
+                                    </property>
+                                </item>
+                                <property name="name">
+                                    <cstring>filterMode</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layoutRadius</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>radiusLabel</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Radius</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QSlider">
+                                        <property name="name">
+                                            <cstring>radius</cstring>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>64</number>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layoutAccum</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>accumLabel</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Accum 1</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QSlider">
+                                        <property name="name">
+                                            <cstring>accum</cstring>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>50</number>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layoutAccum2</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>accum2Label</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Accum 2</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QSlider">
+                                        <property name="name">
+                                            <cstring>accum2</cstring>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>50</number>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>recursive</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Recursive</string>
+                                </property>
+                            </widget>
+                        </vbox>
+                    </widget>
+                </widget>
+                <widget class="QLayoutWidget" row="2" column="1" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>layoutColorSliders</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QSlider">
+                            <property name="name">
+                                <cstring>red</cstring>
+                            </property>
+                            <property name="maxValue">
+                                <number>255</number>
+                            </property>
+                            <property name="value">
+                                <number>191</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QSlider">
+                            <property name="name">
+                                <cstring>green</cstring>
+                            </property>
+                            <property name="maxValue">
+                                <number>255</number>
+                            </property>
+                            <property name="value">
+                                <number>191</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QSlider">
+                            <property name="name">
+                                <cstring>blue</cstring>
+                            </property>
+                            <property name="maxValue">
+                                <number>255</number>
+                            </property>
+                            <property name="value">
+                                <number>191</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QLabel" row="2" column="0">
+                    <property name="name">
+                        <cstring>colorPixmap</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>Box</enum>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="0">
+                    <property name="name">
+                        <cstring>alphaPixmap</cstring>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>Box</enum>
+                    </property>
+                </widget>
+                <widget class="QSlider" row="3" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>alpha</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>255</number>
+                    </property>
+                    <property name="value">
+                        <number>255</number>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="3" column="3">
+                    <property name="name">
+                        <cstring>colorButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Color</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>disabledCheck</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Disabled</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="GLMain" row="0" column="1" rowspan="2" colspan="1">
+            <property name="name">
+                <cstring>Viewport</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>512</width>
+                    <height>512</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>512</width>
+                    <height>512</height>
+                </size>
+            </property>
+            <property name="cursor">
+                <cursor>2</cursor>
+            </property>
+        </widget>
+        <spacer row="1" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+        </spacer>
+        <spacer row="1" column="2">
+            <property name="name">
+                <cstring>spacer2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBarEditor</cstring>
+    </property>
+    <item text="File" name="File">
+        <action name="fileOpenAction"/>
+        <separator/>
+        <action name="fileOpenLayersAction"/>
+        <action name="fileSaveLayersAction"/>
+        <separator/>
+        <action name="fileExportAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="Tools" name="Tools">
+        <action name="toolsChoose_Clear_ColorAction"/>
+        <action name="toolsOpengl_InformationAction"/>
+        <separator/>
+        <action name="toolsObject_InformationAction"/>
+        <action name="toolsView_InformationAction"/>
+        <separator/>
+        <action name="toolsOrigin_DisplayAction"/>
+        <action name="toolsOrigin_RotateAction"/>
+        <separator/>
+        <action name="toolsBench_Action"/>
+    </item>
+    <item text="About" name="About">
+        <action name="aboutAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<customwidgets>
+    <customwidget>
+        <class>GLMain</class>
+        <header location="local">glmain.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>newDraggedFile()</signal>
+    </customwidget>
+</customwidgets>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="text">
+            <string>Open Object</string>
+        </property>
+        <property name="menuText">
+            <string>Open Object</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileOpenLayersAction</cstring>
+        </property>
+        <property name="text">
+            <string>Open Layers</string>
+        </property>
+        <property name="menuText">
+            <string>Open Layers</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+L</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveLayersAction</cstring>
+        </property>
+        <property name="text">
+            <string>Save Layers</string>
+        </property>
+        <property name="menuText">
+            <string>Save Layers</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExportAction</cstring>
+        </property>
+        <property name="text">
+            <string>Export To Engine</string>
+        </property>
+        <property name="menuText">
+            <string>Export To Engine</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+E</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>Exit</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Q</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsChoose_Clear_ColorAction</cstring>
+        </property>
+        <property name="text">
+            <string>Choose Clear Color</string>
+        </property>
+        <property name="menuText">
+            <string>Choose Clear Color</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+C</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsOpengl_InformationAction</cstring>
+        </property>
+        <property name="text">
+            <string>OpenGL Information</string>
+        </property>
+        <property name="menuText">
+            <string>OpenGL Information</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+G</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsObject_InformationAction</cstring>
+        </property>
+        <property name="text">
+            <string>Object Information</string>
+        </property>
+        <property name="menuText">
+            <string>Object Information</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+I</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsView_InformationAction</cstring>
+        </property>
+        <property name="text">
+            <string>View Information</string>
+        </property>
+        <property name="menuText">
+            <string>View Information</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+V</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsOrigin_DisplayAction</cstring>
+        </property>
+        <property name="text">
+            <string>Display Origins</string>
+        </property>
+        <property name="menuText">
+            <string>Display Origins</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+D</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsOrigin_RotateAction</cstring>
+        </property>
+        <property name="text">
+            <string>Rotate Over Object Origin</string>
+        </property>
+        <property name="menuText">
+            <string>Rotate Over Object Origin</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+R</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>toolsBench_Action</cstring>
+        </property>
+        <property name="text">
+            <string>Benchmark</string>
+        </property>
+        <property name="menuText">
+            <string>Benchmark</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+B</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>aboutAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>About</string>
+        </property>
+    </action>
+</actions>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1002">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003b149444154789cad94514c5b5518c77fe7dc4b7b4b6150bb96324418ca32358bee6192609c51d883892ce083f1718b3ebb185f8dc91e972cf39d2d6a78d0b027b3cd07d9e68c81c625a6c139408a4384f416100aed6d4b7bdb7b8e0fc0921a70c6ed7b3ae7e43bbff3fffedfc927e2f138bbd1dbdbab7902118fc785d8058f8d8de9aeae2e72b91cb66de338ce7f82e47239666767492412b8aefbf0dcdc553a323242f4501d918e2d3a8f15a9784584100809a609526eafd1a0f54e6142e029c5c21f3ef41583bb77a805efbe1ce9d86279e32619678eaab7853fa0f02a16abb64166ad0cdac75307eb3874b84cb0a14aa5a24108cc0688c48c9a4a1e826ddbe6f0b12219678e8ace610502ccdfafe3f68d3c33bf6c01c59dcc209d472c4e0d35d2f3ba81d205d06005e4de60c77170bd2255af80150870f70e8c0eaf009260a349577714e913a4175d16925b5cbe50607931cc3b677c68ca28a5f7066f5b26f00760febec9e8f032a0e81b68a17fc0201415989647a9d8c4c498cbe8f05f5cff3a4d4bac8bfe210b290b35e01afd428257b1b875cd01aaf4bd1de5dd0fea688e1530ad1c1bab16b7af17393558cf997311c0e49bafd670d6258621f6576c9ab09a3248fe5ae6c08103f49f36517213d33070369bf8e2529ee9c90ceb2b2eef7f14617c2c48722a4b7226845143fa87622905ebeb6514253a9eb5084504a66950c88618bee0303d99217cb09e9ed71a09369538fa523d00e9a50a42eed3bc6d8f41281fa0903e8561796cac86f8f2b33c33930ea0f0fb4d5adbeb30ad22866ffbbad226d2a805d7ee0484220208925aaa50deaa67e27b97e9c90ccdcdf5c462cdd8a94d2e7e62f3603244ea410989a4ed191f52a8fd156b056d9d553a9e0bf0e7ef45c6bf7339fd5e90ec7a88575e6d20d6e6e7e2a755ec854dce7fb8885b2cd014f6f3c2714d3a550bae55ac35c1068fb7061b00b87a7995899b25ce9e0b73e24d8fae97b37c7cbe9370b499fce6066eb54adf6098f6ee2a9a7ff9c70841a5023d270deca510d746537c7e29cdf8ad20475fb4307c82d4fc324ec6859d66fdfc6381e44014b36e9fe6e572393ca54068aa22cfd0598b686b3737aeae90bc9725796f0350802414b6e81b7c9a9f7e70708a2e6e5991cfeee3f1ecec2c0b0b3e8c068142a2a8d23728397132c6dc6f2e2b8b0a8da4b5ddc7f3c735ed47146f0cb4502983693a4c25ca7b83138904fa8a412466e00f48b4271086c2901263676c4a6990b615b6ade15b85694af239984a94585bf6f606bbae5b334f1f37e4a3531e031c8fc7c5a312ff17f849c3e3f1b8f81b8be6900aca9b61c90000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>fileOpenAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>openObject()</slot>
+    </connection>
+    <connection>
+        <sender>toolsChoose_Clear_ColorAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>setBackgroundColor()</slot>
+    </connection>
+    <connection>
+        <sender>addLayerButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MainForm</receiver>
+        <slot>addLayer()</slot>
+    </connection>
+    <connection>
+        <sender>removeLayerButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MainForm</receiver>
+        <slot>removeLayer()</slot>
+    </connection>
+    <connection>
+        <sender>layerList</sender>
+        <signal>highlighted(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>changeLayer()</slot>
+    </connection>
+    <connection>
+        <sender>upLayerButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MainForm</receiver>
+        <slot>upLayer()</slot>
+    </connection>
+    <connection>
+        <sender>downLayerButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MainForm</receiver>
+        <slot>downLayer()</slot>
+    </connection>
+    <connection>
+        <sender>filterMode</sender>
+        <signal>activated(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setFilterMode(int)</slot>
+    </connection>
+    <connection>
+        <sender>accum</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setAccum(int)</slot>
+    </connection>
+    <connection>
+        <sender>radius</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setRadius(int)</slot>
+    </connection>
+    <connection>
+        <sender>blue</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setBlue(int)</slot>
+    </connection>
+    <connection>
+        <sender>red</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setRed(int)</slot>
+    </connection>
+    <connection>
+        <sender>renderMode</sender>
+        <signal>activated(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setRenderMode(int)</slot>
+    </connection>
+    <connection>
+        <sender>width</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setWidth(int)</slot>
+    </connection>
+    <connection>
+        <sender>textureButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MainForm</receiver>
+        <slot>openTexture()</slot>
+    </connection>
+    <connection>
+        <sender>cull</sender>
+        <signal>activated(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setCull(int)</slot>
+    </connection>
+    <connection>
+        <sender>effectWidget</sender>
+        <signal>currentChanged(QWidget*)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setEffectMode()</slot>
+    </connection>
+    <connection>
+        <sender>dstBlend</sender>
+        <signal>activated(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setDstBlend(int)</slot>
+    </connection>
+    <connection>
+        <sender>srcBlend</sender>
+        <signal>activated(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setSrcBlend(int)</slot>
+    </connection>
+    <connection>
+        <sender>layerName</sender>
+        <signal>lostFocus()</signal>
+        <receiver>MainForm</receiver>
+        <slot>setLayerName()</slot>
+    </connection>
+    <connection>
+        <sender>disabledCheck</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setLayerDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>layerName</sender>
+        <signal>returnPressed()</signal>
+        <receiver>MainForm</receiver>
+        <slot>setLayerName()</slot>
+    </connection>
+    <connection>
+        <sender>toolsObject_InformationAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>objectInfo()</slot>
+    </connection>
+    <connection>
+        <sender>aboutAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>aboutDialog()</slot>
+    </connection>
+    <connection>
+        <sender>fileOpenLayersAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>loadLayers()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveLayersAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>saveLayers()</slot>
+    </connection>
+    <connection>
+        <sender>fileExportAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>exportLayers()</slot>
+    </connection>
+    <connection>
+        <sender>Viewport</sender>
+        <signal>newDraggedFile()</signal>
+        <receiver>MainForm</receiver>
+        <slot>enableControls()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>smooth</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setSmooth(bool)</slot>
+    </connection>
+    <connection>
+        <sender>recursive</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setRecursive(bool)</slot>
+    </connection>
+    <connection>
+        <sender>green</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setGreen(int)</slot>
+    </connection>
+    <connection>
+        <sender>alpha</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setAlpha(int)</slot>
+    </connection>
+    <connection>
+        <sender>colorButton</sender>
+        <signal>clicked()</signal>
+        <receiver>MainForm</receiver>
+        <slot>setColor()</slot>
+    </connection>
+    <connection>
+        <sender>accum2</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>MainForm</receiver>
+        <slot>setAccum2(int)</slot>
+    </connection>
+    <connection>
+        <sender>toolsOpengl_InformationAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>openglInfo()</slot>
+    </connection>
+    <connection>
+        <sender>toolsView_InformationAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>viewInfo()</slot>
+    </connection>
+    <connection>
+        <sender>toolsOrigin_DisplayAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MainForm</receiver>
+        <slot>toggleDisplayOrigins(bool)</slot>
+    </connection>
+    <connection>
+        <sender>toolsOrigin_RotateAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>MainForm</receiver>
+        <slot>toggleRotateOrigin(bool)</slot>
+    </connection>
+    <connection>
+        <sender>toolsBench_Action</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>benchmark()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>layerList</tabstop>
+    <tabstop>addLayerButton</tabstop>
+    <tabstop>removeLayerButton</tabstop>
+    <tabstop>upLayerButton</tabstop>
+    <tabstop>downLayerButton</tabstop>
+    <tabstop>layerName</tabstop>
+    <tabstop>disabledCheck</tabstop>
+    <tabstop>srcBlend</tabstop>
+    <tabstop>dstBlend</tabstop>
+    <tabstop>red</tabstop>
+    <tabstop>green</tabstop>
+    <tabstop>blue</tabstop>
+    <tabstop>alpha</tabstop>
+    <tabstop>colorButton</tabstop>
+    <tabstop>effectWidget</tabstop>
+    <tabstop>renderMode</tabstop>
+    <tabstop>width</tabstop>
+    <tabstop>smooth</tabstop>
+    <tabstop>cull</tabstop>
+    <tabstop>textureButton</tabstop>
+    <tabstop>filterMode</tabstop>
+    <tabstop>radius</tabstop>
+    <tabstop>accum</tabstop>
+    <tabstop>accum2</tabstop>
+    <tabstop>recursive</tabstop>
+    <tabstop>MenuBarEditor</tabstop>
+</tabstops>
+<slots>
+    <slot>openObject()</slot>
+    <slot>setBackgroundColor()</slot>
+    <slot>changeLayer()</slot>
+    <slot>addLayer()</slot>
+    <slot>removeLayer()</slot>
+    <slot>upLayer()</slot>
+    <slot>downLayer()</slot>
+    <slot>setSrcBlend( int mode )</slot>
+    <slot>setDstBlend( int mode )</slot>
+    <slot>setEffectMode()</slot>
+    <slot>setRenderMode( int mode )</slot>
+    <slot>setWidth( int width )</slot>
+    <slot>setCull( int mode )</slot>
+    <slot>setColor()</slot>
+    <slot>openTexture()</slot>
+    <slot>setFilterMode( int mode )</slot>
+    <slot>setRadius( int radius )</slot>
+    <slot>setRed( int color )</slot>
+    <slot>setGreen( int color )</slot>
+    <slot>setBlue( int color )</slot>
+    <slot>setAccum( int accum )</slot>
+    <slot>setLayerDisabled( bool flag )</slot>
+    <slot>setLayerName()</slot>
+    <slot>objectInfo()</slot>
+    <slot>aboutDialog()</slot>
+    <slot>loadLayers()</slot>
+    <slot>saveLayers()</slot>
+    <slot>exportLayers()</slot>
+    <slot>enableControls()</slot>
+    <slot>setSmooth( bool flag )</slot>
+    <slot>setRecursive( bool flag )</slot>
+    <slot>setAlpha( int color )</slot>
+    <slot>setAccum2( int accum )</slot>
+    <slot>openglInfo()</slot>
+    <slot>viewInfo()</slot>
+    <slot>toggleDisplayOrigins( bool value )</slot>
+    <slot>toggleRotateOrigin( bool value )</slot>
+    <slot>benchmark()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>glmain.h</includehint>
+</includehints>
+</UI>
